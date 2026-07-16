@@ -1,269 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Ashley Meigh</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#eef5ef;
-    color:#333;
-}
-
-.container{
-    display:flex;
-    min-height:100vh;
-}
-
-/* Sidebar */
-
-.sidebar{
-    width:300px;
-    background:#214d36;
-    color:white;
-    padding:30px;
-}
-
-.sidebar h2{
-    margin-bottom:30px;
-    border-bottom:2px solid #7cd992;
-    padding-bottom:10px;
-}
-
-.sidebar ul{
-    list-style:none;
-}
-
-.sidebar li{
-    margin-bottom:15px;
-    background:rgba(255,255,255,.08);
-    border-radius:10px;
-    transition:.3s;
-}
-
-.sidebar li:hover{
-    background:rgba(255,255,255,.18);
-    transform:translateX(6px);
-}
-
-.sidebar a{
-    display:block;
-    padding:15px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* Main */
-
-main{
-    flex:1;
-    padding:60px;
-}
-
-header{
-    margin-bottom:40px;
-}
-
-h1{
-    color:#214d36;
-    font-size:3rem;
-}
-
-.subtitle{
-    color:#666;
-    margin-top:8px;
-    font-size:1.2rem;
-}
-
-.about{
-    background:white;
-    padding:35px;
-    border-radius:16px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    margin-bottom:40px;
-}
-
-.about img{
-    width:100%;
-    max-width:700px;
-    display:block;
-    margin:0 auto 25px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-.about h2{
-    color:#214d36;
-    margin-bottom:20px;
-}
-
-.about p{
-    margin-bottom:18px;
-    line-height:1.8;
-}
-
-.interests{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
-}
-
-.card h3{
-    color:#214d36;
-    margin-bottom:10px;
-}
-
-footer{
-    margin-top:50px;
-    text-align:center;
-    color:#666;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<aside class="sidebar">
-
-<h2>Shinageanis</h2>
-
-<ul>
-
-<li>
-<a href="mushroom-pokemon-go.html">
-🍄 Mushroom Pokémon Go
-</a>
-</li>
-
-<li>
-<a href="knitting-bragg-edge-with-images.html">
-🧶 Knitting Bragg Edge
-</a>
-</li>
-
-<li>
-<a href="toad-patrol-full-images-positioned.html">
-🐸 Toad Patrol
-</a>
-</li>
-
-<li>
-<a href="mushroom-hexapod.html">
-🤖 Mushroom Hexapod
-</a>
-</li>
-
-</ul>
-
-</aside>
-
-<main>
-
-<header>
-
-<h1>Ashley Meigh</h1>
-
-<div class="subtitle">
-Software Scientist • ISIS Neutron and Muon Source
-</div>
-
-</header>
-
 <section class="about">
 
-<img src="fern-pc.jpg" alt="Workspace with PC and Staghorn Fern">
+    <img src="fern-pc.jpg"
+         alt="My workstation"
+         style="width:100%;max-width:700px;display:block;margin:0 auto 25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.15);">
 
-<h2>Introduction</h2>
+    <div style="text-align:center;margin-bottom:35px;">
 
-<p>
-Hello! I'm Ashley Meigh, a Software Scientist at the
-<strong>ISIS Neutron and Muon Source</strong>.
-My work focuses on developing scientific software for neutron imaging,
-tomography and data analysis, helping researchers investigate the
-internal structure of materials using neutron experiments.
-</p>
+        <h2 style="margin-bottom:8px;">💻 My PC</h2>
 
-<p>
-Outside of work I have a passion for mushrooms and currently cultivate
-<strong>22 different varieties</strong>.
-I also enjoy plants, biological computing, fashion,
-knitting and art. Many of my personal projects combine science,
-technology and creativity, from fungal biohybrid robotics to knitted
-representations of neutron imaging data.
-</p>
+        <p style="font-size:18px;color:#666;font-style:italic;">
+            (ignore fern)
+        </p>
+
+    </div>
+
+    <h2>Introduction</h2>
+
+    <p>
+        Hi! I'm <strong>Ashley Meigh</strong>, a Software Scientist at the
+        <strong>ISIS Neutron and Muon Source</strong>, where I develop software
+        for neutron imaging and tomography. My work focuses on creating tools
+        that allow researchers to reconstruct, analyse and visualise neutron
+        imaging data, helping scientists investigate the internal structure of
+        materials using neutrons.
+    </p>
+
+    <p>
+        Away from work I have far too many hobbies. I currently cultivate
+        <strong>22 different mushroom species</strong>, photograph fungi across
+        the UK, maintain a digital fungal archive, volunteer on local
+        <strong>Toad Patrols</strong>, experiment with biological computing,
+        build mushroom-controlled robots, knit neutron imaging data into
+        textiles and occasionally remember to water my houseplants.
+    </p>
+
+    <p>
+        Most of my projects start with a question that probably shouldn't be
+        asked, such as:
+    </p>
+
+    <ul style="margin-left:30px;line-height:2;margin-bottom:25px;">
+        <li>🍄 Can mushrooms control a robot?</li>
+        <li>🧶 Can neutron diffraction data become a jumper?</li>
+        <li>📱 Can fungi be collected like Pokémon?</li>
+        <li>🐸 How many toads can be safely escorted across a road?</li>
+    </ul>
+
+    <p>
+        This website is a collection of those projects, where science,
+        engineering and creativity occasionally produce something useful...
+        and sometimes just something interesting.
+    </p>
+
+    <div style="background:#edf8ef;
+                border-left:5px solid #214d36;
+                padding:20px;
+                border-radius:12px;
+                margin-top:30px;">
+
+        <h3 style="color:#214d36;margin-bottom:12px;">
+            📸 Find me elsewhere
+        </h3>
+
+        <p style="margin:0;">
+            Follow my mushroom finds, science projects and various adventures on
+            <a href="https://www.instagram.com/ashleymeigh1/"
+               target="_blank"
+               style="font-weight:bold;color:#214d36;text-decoration:none;">
+               Instagram (@ashleymeigh1)
+            </a>.
+        </p>
+
+    </div>
 
 </section>
-
-<h2 style="color:#214d36;margin-bottom:20px;">
-Research Interests
-</h2>
-
-<div class="interests">
-
-<div class="card">
-<h3>🍄 Mushrooms</h3>
-<p>Cultivating 22 species and building a digital fungal archive.</p>
-</div>
-
-<div class="card">
-<h3>🌿 Plants</h3>
-<p>Houseplants, cultivation and botany.</p>
-</div>
-
-<div class="card">
-<h3>🧬 Biological Computing</h3>
-<p>Exploring unconventional computation using living systems.</p>
-</div>
-
-<div class="card">
-<h3>🧶 Knitting</h3>
-<p>Creating textiles from scientific datasets.</p>
-</div>
-
-<div class="card">
-<h3>👗 Fashion</h3>
-<p>Digital design and creative fabrication.</p>
-</div>
-
-<div class="card">
-<h3>🎨 Art</h3>
-<p>Combining science and creativity through visual projects.</p>
-</div>
-
-</div>
-
-<footer>
-
-© 2026 Ashley Meigh
-
-</footer>
-
-</main>
-
-</div>
-
-</body>
-</html>
