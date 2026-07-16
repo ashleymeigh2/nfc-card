@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mushroom Pokémon Go | Ashley Meigh</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#eef5ef;color:#333;line-height:1.7}
+header{background:#21523b;color:#fff;text-align:center;padding:60px 20px}
+main{max-width:1100px;margin:auto;padding:30px}
+section{background:#fff;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.08);margin-bottom:30px}
+h2{color:#21523b}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.15);transition:.3s}
+.gallery img:hover{transform:scale(1.03)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.stat{background:#21523b;color:#fff;text-align:center;padding:20px;border-radius:12px}
+.stat h3{margin:0;font-size:2.2em}
+.back{display:inline-block;margin-top:20px;padding:12px 22px;background:#21523b;color:#fff;text-decoration:none;border-radius:8px}
+</style>
+</head>
+<body>
+<header>
+<h1>🍄 Mushroom Pokémon Go</h1>
+<p>Building a digital fungal archive using NFC technology.</p>
+</header>
+
+<main>
+
+<section>
+<h2>Project Overview</h2>
+<p>The UK is home to tens of thousands of fungal species. As a hobby, I have started building a personal mushroom biobank. Whenever I find an interesting specimen, I preserve a small sample and assign it a unique NFC tag. The tag links to a digital record containing photographs, the collection location, date, season and habitat.</p>
+<p>Over time this creates a growing archive of fungi collected across the UK, allowing me to revisit previous finds, compare specimens collected in different seasons and habitats, and build a long-term record of local fungal diversity. So far I have catalogued more than <strong>157 specimens</strong>.</p>
+</section>
+
+<section>
+<h2>🍄 Recent Finds</h2>
+<div class="gallery">
+<img src="PXL_20220601_093510792.jpg" alt="Oyster mushrooms">
+<img src="PXL_20250905_092818881.jpg" alt="Puffball fungus">
+<img src="PXL_20251030_121214203.MP.jpg" alt="Red jelly fungus">
+<img src="PXL_20251030_122857461.jpg" alt="Purple crust fungus">
+<img src="PXL_20251030_123151299.jpg" alt="Woodland fungus">
+</div>
+</section>
+
+<section>
+<h2>🏷️ Digital Archive</h2>
+<p>Each preserved specimen is linked to a PostgreSQL database using its NFC tag. Every record stores photographs, GPS location, habitat, collection date, season and identification notes. The recorded species can also be exported to phyloT to generate a phylogenetic tree of the collection.</p>
+</section>
+
+<section>
+<h2>📊 Collection Statistics</h2>
+<div class="stats">
+<div class="stat"><h3>157+</h3><p>Specimens</p></div>
+<div class="stat"><h3>NFC</h3><p>Tagged Archive</p></div>
+<div class="stat"><h3>PostgreSQL</h3><p>Digital Database</p></div>
+<div class="stat"><h3>UK</h3><p>Collection Sites</p></div>
+</div>
+</section>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</main>
+</body>
+</html>
