@@ -4,78 +4,217 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ashley Meigh</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;background:#eef5ef;color:#333}
-.container{display:flex;min-height:100vh}
-.sidebar{width:300px;background:#214d36;color:#fff;padding:30px}
-.sidebar h2{margin-bottom:30px;border-bottom:2px solid #7cd992;padding-bottom:10px}
-.sidebar ul{list-style:none}
-.sidebar li{margin-bottom:15px;background:rgba(255,255,255,.08);border-radius:10px;transition:.3s}
-.sidebar li:hover{background:rgba(255,255,255,.18);transform:translateX(6px)}
-.sidebar a{display:block;padding:15px;color:#fff;text-decoration:none;font-weight:bold}
-main{flex:1;padding:60px}
-h1{font-size:3rem;color:#214d36}
-.subtitle{color:#666;margin-top:8px;font-size:1.2rem}
-.about{background:#fff;padding:35px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08);margin:40px 0}
-.about img{width:100%;max-width:700px;display:block;margin:0 auto 25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,.15)}
-.about h2{color:#214d36;margin-bottom:20px}
-.about p{line-height:1.8;margin-bottom:18px}
-.center{text-align:center}
-.btn{display:inline-block;background:#214d36;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold}
-.interests{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
-.card{background:#fff;padding:25px;border-radius:15px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.08)}
-.card h3{color:#214d36;margin-bottom:10px}
-footer{text-align:center;color:#666;margin-top:50px}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef5ef;
+    color:#333;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:280px;
+    background:#214d36;
+    color:white;
+    padding:30px;
+}
+
+.sidebar h2{
+    margin-bottom:25px;
+    border-bottom:2px solid #7cd992;
+    padding-bottom:10px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:15px;
+    background:rgba(255,255,255,0.08);
+    padding:14px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar li:hover{
+    background:rgba(255,255,255,0.18);
+    transform:translateX(6px);
+}
+
+/* Main */
+
+main{
+    flex:1;
+    padding:60px;
+}
+
+header{
+    margin-bottom:40px;
+}
+
+h1{
+    color:#214d36;
+    font-size:3rem;
+}
+
+.subtitle{
+    color:#666;
+    margin-top:8px;
+    font-size:1.2rem;
+}
+
+.about{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:35px;
+}
+
+.about h2{
+    color:#214d36;
+    margin-bottom:15px;
+}
+
+.about p{
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.interests{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:14px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:8px;
+    color:#214d36;
+}
+
+footer{
+    margin-top:40px;
+    color:#777;
+}
 </style>
+
 </head>
+
 <body>
+
 <div class="container">
 
-<aside class="sidebar">
-<h2>Shinageanis</h2>
-<ul>
-<li><a href="mushroom-pokemon-go.html">🍄 Mushroom Pokémon Go</a></li>
-<li><a href="knitting-bragg-edge-with-images.html">🧶 Knitting Bragg Edge</a></li>
-<li><a href="toad-patrol-full-images-positioned.html">🐸 Toad Patrol</a></li>
-<li><a href="mushroom-hexapod.html">🤖 Mushroom Hexapod</a></li>
-</ul>
-</aside>
+    <aside class="sidebar">
 
-<main>
-<header>
-<h1>Ashley Meigh</h1>
-<div class="subtitle">Software Scientist • ISIS Neutron and Muon Source</div>
-</header>
+        <h2>Shinageanis</h2>
 
-<section class="about">
-<img src="fern-pc.jpg" alt="My workstation">
-<p class="center"><strong>💻 My PC</strong><br><em>(ignore fern)</em></p>
+        <ul>
+            <li>🍄 Mushroom Pokémon Go</li>
+            <li>🧶 Knitting Bragg Edge</li>
+            <li>🐸 Toad Patrol</li>
+            <li>🤖 Mushroom Hexapod</li>
+        </ul>
 
-<h2>Introduction</h2>
+    </aside>
 
-<p>Hello! I'm Ashley Meigh, a Software Scientist at the <strong>ISIS Neutron and Muon Source</strong>, where I develop software for neutron imaging and tomography.</p>
+    <main>
 
-<p>Outside work I cultivate <strong>22 varieties of mushrooms</strong> and enjoy plants, biological computing, knitting, fashion and art. I also volunteer with a local <strong>Toad Patrol</strong> and enjoy creating projects that combine science with creativity.</p>
+        <header>
 
-<div class="center" style="margin-top:25px;">
-<a class="btn" href="https://www.instagram.com/ashleymeigh1/" target="_blank" rel="noopener">📸 Follow me on Instagram</a>
+            <h1>Ashley Meigh</h1>
+
+            <div class="subtitle">
+                Software Scientist • ISIS Neutron and Muon Source
+            </div>
+
+        </header>
+
+        <section class="about">
+
+            <h2>Introduction</h2>
+
+            <p>
+                Hello! I'm Ashley Meigh, a Software Scientist at the
+                <strong>ISIS Neutron and Muon Source</strong>. My work focuses
+                primarily on developing software for neutron science and helping
+                researchers process and analyse data from neutron experiments.
+            </p>
+
+            <p>
+                Outside of work I have a passion for mushrooms and currently
+                cultivate <strong>22 different varieties</strong>. I also enjoy
+                plants, biological computing, fashion, knitting and art. I love
+                combining science, technology and creativity in both my work and
+                my hobbies.
+            </p>
+
+        </section>
+
+        <h2 style="color:#214d36;margin-bottom:20px;">My Interests</h2>
+
+        <div class="interests">
+
+            <div class="card">
+                <h3>🍄 Mushrooms</h3>
+                <p>Growing 22 different varieties.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌿 Plants</h3>
+                <p>Interested in botany and cultivation.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧬 Biological Computing</h3>
+                <p>Exploring computation inspired by biology.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧶 Knitting</h3>
+                <p>Creative textile projects and techniques.</p>
+            </div>
+
+            <div class="card">
+                <h3>👗 Fashion</h3>
+                <p>An interest in design and style.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Art</h3>
+                <p>Combining creativity with science.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            © 2026 Ashley Meigh
+        </footer>
+
+    </main>
+
 </div>
-</section>
 
-<h2 style="color:#214d36;margin-bottom:20px;">Research Interests</h2>
-
-<div class="interests">
-<div class="card"><h3>🍄 Mushrooms</h3><p>Cultivating 22 varieties and building a digital fungal archive.</p></div>
-<div class="card"><h3>🌿 Plants</h3><p>Houseplants and cultivation.</p></div>
-<div class="card"><h3>🧬 Biological Computing</h3><p>Exploring unconventional computation using living systems.</p></div>
-<div class="card"><h3>🧶 Knitting</h3><p>Turning scientific data into textiles.</p></div>
-<div class="card"><h3>👗 Fashion</h3><p>Creative design and fabrication.</p></div>
-<div class="card"><h3>🎨 Art</h3><p>Combining science and creativity.</p></div>
-</div>
-
-<footer>© 2026 Ashley Meigh</footer>
-</main>
-</div>
 </body>
 </html>
